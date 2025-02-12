@@ -12,7 +12,7 @@ function checkearResultado(){
   let numeroIngresado = parseFloat(numeroEntrada.value)
 
   if(numeroIngresado < 1 || numeroIngresado > 100 || isNaN(numeroIngresado)){
-    mensaje.textContent = '¡Ingresa un numero entre 1 y 100 CTM >:v !'
+    mensaje.textContent = '¡Ingresa un numero entre 1 y 100!'
     return
   }
 
@@ -31,6 +31,6 @@ function checkearResultado(){
   mensaje.textContent = "Alcanzaste el numero máximo de intentos"
   numeroEntrada.disabled = true
   boton.disabled = true
-  mensaje_reiniciar.textContent="Para volver a jugar, reinicia la página :V"
+  mensaje_reiniciar.textContent=""
 }
 }
